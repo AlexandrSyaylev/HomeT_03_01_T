@@ -14,5 +14,6 @@ install:
   #- java -jar ./artifacts/app-mbank.jar &
 
 build_script:
+  - ./gradlew test -Dselenide.headless=true
   - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
   #- ./gradlew build --info  # запускаем тест, флаг --info позволяет выводить больше информации
